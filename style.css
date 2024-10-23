@@ -1,0 +1,729 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 14vh;
+  align-items: center;
+  padding: 0% 100px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+a:hover {
+  color: red;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 50px;
+}
+
+/* ......................................Hero Section................................  */
+
+main {
+  display: flex;
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+.heroBg {
+  /* background-image: url("./images/landing.png");
+  background-size: cover;
+  background-position: center; */
+  width: 50%;
+}
+
+.heroBg img {
+  height: 100%;
+  width: 100%;
+}
+
+.heroText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.heroText h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(33,37,41);
+}
+
+.heroText span {
+  font-size: 17px;
+  color: rgb(33,37,41);
+}
+
+.heroText button {
+  background-color: rgb(52,58,64);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+/*......................................... Discover Collections................................... */
+
+.discover {
+  /* height: 70vh; */
+  padding: 40px;
+  padding-top: 50px;
+}
+
+.discover h1 {
+  border-left: 3px solid red;
+  font-weight: 795;
+  padding-left: 20px;
+  margin-left: 80px;
+  line-height: 28px;
+  color: rgb(33,37,41);
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  height: 94vh;
+  margin: 65px;
+  /* padding: 30px; */
+  margin-top: 50px;
+}
+
+.one {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  height: 100vh;
+  width: 93%;
+  background-image: url(./images/woman.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+}
+
+.two {
+  grid-column: 4/4;
+  height: 50vh;
+  width: 125%;
+  margin-left: -60px;
+  background-image: url(./images/man.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+}
+
+.three {
+  grid-column: 4/4;
+  height: 50vh;
+  width: 125%;
+  margin-left: -60px;
+  background-image: url(./images/shoes.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+}
+
+.btn {
+  margin: 20px 10px;
+  padding: 20px 10px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-size: large;
+  width: 144.5px;
+  height: 60px;
+  position: relative;
+}
+
+.one .btn {
+  top: 44%;
+  left: 39%;
+}
+
+.two .btn, .three .btn {
+  top: 39%;
+  left: 26%;
+}
+
+.btn p {
+  text-align: left;
+}
+
+.btn span {
+  color: grey;
+  font-size: 10px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  transition: all 500ms linear;
+}
+
+/* ....................Popular Products.................... */
+
+.popular {
+  height: 70vh;
+  padding-bottom: 60px;
+}
+
+.popular h1 {
+  border-left: 3px solid red;
+  font-weight: 600;
+  font-size: 24px;
+  padding-left: 20px;
+  margin-left: 130px;
+  margin-top: -7px;
+  color: rgb(33,37,41);
+}
+
+.products, .prts, .rated {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.brownShoe {
+  background-image: url(./images/gray\ shoe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  background-color: whitesmoke;
+}
+
+.blueShoe {
+  background-image: url(./images/blue\ shoe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  background-color: whitesmoke;
+}
+
+.denimJacket {
+  background-image: url(./images/jacket.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  background-color: whitesmoke;
+}
+
+.leatherBag {
+  background-image: url(./images/bag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  margin-top: -30px;
+  background-color: whitesmoke;
+}
+
+.smoothcloth {
+  background-image: url(./images/smooth\ cloth.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  margin-top: -48px;
+  background-color: whitesmoke;
+}
+
+.yellowJacket {
+  background-image: url(./images/yellow\ jacket.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  margin-top: -48px;
+  background-color: whitesmoke;
+}
+
+.popular div p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.prts div i,
+.rated div i {
+  color: rgb(255, 197, 8);
+  display: inline-block;
+}
+
+/* ....................Popular Products.................... */
+
+.most {
+  height: 70vh;
+  padding-bottom: 60px;
+}
+
+.most h2 {
+  font-weight: 695;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 70px;
+  color: rgb(33,37,41);
+}
+
+.most hr {
+  height: 5px;
+  width: 70px;
+  background-color: rgb(220,53,69);
+  border: none;
+  margin: auto;
+  margin-top: 7px;
+}
+
+.sc {
+  background-image: url(./images/smooth\ cloth.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  background-color: whitesmoke;
+}
+
+.bshh {
+  background-image: url(./images/blue\ shoe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  background-color: whitesmoke;
+}
+
+.dj {
+  background-image: url(./images/jacket.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 58vh;
+  background-color: whitesmoke;
+}
+
+/* .........................Sub......................... */
+
+sub {
+  display: flex;
+  background-color: whitesmoke;
+  height: 70vh;
+}
+
+.subBg {
+  /* background-image: url("./images/landing.png");
+  background-size: cover;
+  background-position: center; */
+  width: 50%;
+}
+
+.subBg img {
+  /* height: 70%; */
+  width: 58.5%;
+  padding-left: 140px;
+}
+
+.subText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subText h3 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: rgb(33,37,41);
+}
+
+.subText span {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(33,37,41);
+}
+
+.subText button {
+  background-color: rgb(52,58,64);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+/* .........................contact......................... */
+
+.sec {
+  height: 70vh;
+  margin-top: -10px;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin: 100px;
+}
+
+.promo h5 {
+  line-height: 2;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #212529;
+  padding: 12px 0px;
+}
+
+.promo1 h5 {
+  margin-left: -50px;
+  font-weight: 550;
+  font-size: 15px;
+  margin-bottom: -4px;
+  color: #212529;
+}
+
+.promo1 img {
+  border-radius: 5px;
+  margin-left: -50px;
+}
+
+.promo1 p {
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-left: -50px;
+}
+
+.link h5 {
+  margin-left: 28px;
+  font-weight: 550;
+  font-size: 15px;
+  margin-bottom: -6px;
+  color: #212529;
+}
+
+.link1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  margin-left: 28px;
+}
+
+.link1 div p {
+  line-height: 1.5;
+  padding: 12px 0px;
+  font-size: 14.5px;
+  text-align: left;
+  color: gray;
+  margin-top: -7px;
+}
+
+.info h5 {
+  margin-left: 7px;
+  font-weight: 550;
+  font-size: 15px;
+  margin-bottom: -4px;
+  margin-top: -7px;
+  color: #212529;
+}
+
+.info1 {
+  display: flex;
+  gap: 10px;
+  line-height: 4.5;
+}
+
+.info1 i {
+  color: #DC3545;
+  margin-left: 7px;
+  margin-top: -15px;
+  font-size: 16px;
+}
+
+.info1 p {
+  color: #494444;
+  margin-top: 9px;
+}
+
+.sub {
+  margin-top: 2.5rem;
+  font-size: small;
+}
+
+.sub p {
+  margin-left: 7px;
+}
+
+.promo .sub p {
+  font-size: 14.5px;
+  color: #212529;
+  margin-bottom: 7px;
+}
+
+.sub1 {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.sub1 input {
+  padding: 16px;
+  padding-right: 165px;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  outline: none;
+  margin-left: 7px;
+}
+
+.sub1:hover input {
+  border: 1px solid red;
+}
+
+.sub1 button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  border: none;
+  transform: translateY(-50%);
+  background-color: #DC3545;
+  color: white;
+  font-size: 14px;
+  height: 6vh;
+  width: 4.5vw;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* .........................footer......................... */
+
+#footer {
+  height: 6.5vh;
+}
+
+#footer p {
+  margin-top: 50px;
+  margin-bottom: -50px;
+  color: #6C757D;
+  text-align: center;
+  font-size: 15.5px;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    width: 25vw;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .headerIcons {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+    font-size: 20px;
+    outline: none;
+    padding: 5px 5px;
+    border-color: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+
+  .menuIcon:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  main {
+    background-color: #444242;
+    background-image: url(./images/landing.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroBg {
+    display: none;
+  }
+
+  .heroText span {
+    color: white;
+    font-size: 14px;
+  }
+
+  .heroText h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 1000;
+  }
+
+  .discover {
+    padding: 45px 20px;
+  }
+
+  .discover h4,
+  .container h4 {
+    font-size: 26px;
+    font-weight: medium;
+    color: rgb(33, 37, 41);
+    text-align: left;
+  }
+
+  .collections {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+  }
+
+  .image1 .btn {
+    top: 43%;
+    left: 33%;
+  }
+
+  .image2 .btn,
+  .image3 .btn {
+    top: 36%;
+    left: 32%;
+  }
+
+  .container {
+    padding: 45px;
+  }
+
+  .popular,
+  .popular1 {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    margin: auto;
+    justify-content: start;
+    align-items: start;
+    height: fit-content;
+  }
+
+  .brownShoe,
+  .blueShoe,
+  .denimJacket,
+  .leatherBag,
+  .smoothCloth,
+  .yellowJacket {
+    width: 80vw;
+    height: 70vh;
+  }
+
+  .most h4 {
+    font-size: 1.55rem;
+  }
+
+  .rated {
+    flex-direction: column;
+  }
+
+  .shoe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shoes {
+    display: none;
+  }
+
+  .newShoes span {
+    font-size: 12px;
+    /* padding-bottom: 15px; */
+    /* font-weight: bold; */
+  }
+
+  .newShoes h4 {
+    font-size: 41px;
+  }
+
+  .promo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .sub1 {
+    width: 100%;
+  }
+
+  .sub1 button {
+    width: 15%;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
